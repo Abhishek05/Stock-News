@@ -1,0 +1,17 @@
+{
+  "name": "Stock-News",
+  "version": "1.0.0",
+  "description": "Stock News",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abhishek05/"
+  },
+  "author": "Abhishek Paul",
+  "license": ""
+}

@@ -1,0 +1,65 @@
+  <!doctype html>
+  <html>
+      <head>
+        <meta name="google-signin-client_id" content="695034319681-fl05k0mphaunsmj22ea0ksrkvfhjjmcu.apps.googleusercontent.com">
+        <title>Stock News</title>
+        <!--link rel='stylesheet' href='/stylesheets/style.css'></link-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <!--link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="mainController"></script>
+
+        <!--script type="text/javascript" src="public/controller/main-controller.js"></script-->
+        <script src="https://apis.google.com/js/platform.js?onload=displayButton" async defer></script>
+
+        <script type="text/javascript">
+
+        </script>
+
+      </head>
+  <body>
+
+  <header style="border-bottom: 1px solid #ebebeb;">
+              <div class="container">
+                  <!--div class="navbar-header">
+                      <span class="fa navbar-brand" style="color: #41a3ff;height: 18px;">Stock News</span>
+                  </div-->
+
+                  <ul class="nav navbar-nav navbar-left">
+                      <li><h4><span id="header" class="fa navbar-brand" style="color:#41a3ff;"><strong>Stock News</strong></span></h4></li>
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><h4><span id="user" class="fa navbar-brand" style="color:#41a3ff;"></span></h4></li>
+                      <li><div id="signin" class="g-signin2 navbar-brand" data-onsuccess="onLogin" data-theme="dark" data-width="200" data-longtitle="true"/></li>
+                      <li><div id="signout" class="g-signin2 navbar-brand" data-onsuccess="onLogout" data-theme="dark" data-width="200" data-longtitle="true"/></li>
+
+                  </ul>
+              </div>
+
+  </header>
+
+      <div id='maincontent' class='container' style="height:600px">
+          <br/>
+          <div id='enter' class='form-inline' style="height:40px;">
+              <input type="text" id="stock" class="fa input-small form-control" style="float:left;width:90%;" placeholder="Enter Stock Index" />
+              <button onclick="submit()" class="btn btn-success" style='float:right;width:8%;'>Enter</button>
+          </div>
+
+          <div style="height:600px;">
+            <div class="left-panel" style="width:250px;float: left; border-right: 1px solid #ebebeb;height:100%">
+                      <h4><span class="fa label label-default">Stock List</span></h4>
+                      <br/>
+                      <ul id='stocklist'>
+                      </ul>
+            </div>
+            <div class="right-panel" style='padding-left:260px'>
+                
+                <div id='stockdetails' > </div>
+            </div>
+        </div>
+      </div>
+
+  </body>
+  </html>
